@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monitor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #socket-select {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #reading-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #back-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 style="font-size: 50px;">Monitor</h1>
+    </div>
+    <div>
+      <h2 style="color: #555;", style="font-style: italic;", style="font-size: 20px;">Real-time Power and Energy Consumption Monitoring</h2>
+      <p>This page allows you to select a smart socket and monitor its power and energy consumption in real-time.</p>
+    </div>
+    <div id="socket-select" class="form-group">
+      <label for="socket">Select a Socket:</label>
+      <select id="socket" class="form-control">
+        <option value="socket1">Socket 1</option>
+        <option value="socket2">Socket 2</option>
+      </select>
+    </div>
+    <div id="reading-container">
+      <h2>Power Consumption: <span id="power-consumption"></span> W</h2>
+      <h2>Energy Consumption: <span id="energy-consumption"></span> kWh</h2>
+      <h2>Cost of Energy Consumption: <span id="cost-consumption"></span> GHC</h2>
+    </div>
+    <div id="back-button">
+      <button onclick="goBack()" class="btn btn-primary">Back</button>
+    </div>
+  </div>
+
+  <script src="monitor.js"></script>
+</body>
+</html>

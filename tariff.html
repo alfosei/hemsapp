@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tariff Manager</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #tariff-description {
+      margin-bottom: 20px;
+    }
+
+    #tariff-description p {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .tariff-table th {
+      color: #fff;
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 style="font-size: 50px;">Tariff Manager</h1>
+    </div>
+    <div id="tariff-description">
+      <p style="color: #555; font-size: 30px;">Current Residential Tariff Prices</p>
+      <p style="color: #555;">These are the End-User Tariffs provided by the PURC. The rates payable by consumers in the specified categories. The tariffs are denominated in Ghana Pesewas (GHp)</p>
+    </div>
+    <div id="tariff-table">
+      <table class="table tariff-table">
+        <thead>
+          <tr>
+            <th>Range (kWh)</th>
+            <th>Rate (GHp)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0 - 50</td>
+            <td>32.6060</td>
+          </tr>
+          <tr>
+            <td>51 - 300</td> 
+            <td>65.4161</td>
+          </tr>
+          <tr>
+            <td>301 - 600</td>
+            <td>84.8974</td>
+          </tr>
+          <tr>
+            <td>601 and more</td>
+            <td>94.3304</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <button onclick="goBack()" class="btn btn-primary">Back</button>
+    </div>
+  </div>
+
+  <script src="tariff.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "hemsapp",
+  "version": "1.0.0",
+  "description": "HEMSAPP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Alfred Osei",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "ws": "^8.13.0"
+  }
+}

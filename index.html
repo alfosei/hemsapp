@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HEMSAPP Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Add custom styles specific to the menu page */
+    body {
+      background-color: #f2e9fc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #6a0572;
+      font-size: 32px;
+      margin-top: 40px;
+    }
+
+    .menu-buttons {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-buttons button {
+      padding: 20px 40px;
+      margin-bottom: 20px;
+      background-color: #6a0572;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .menu-buttons button:hover {
+      background-color: #9400b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to HEMSAPP Dashboard</h1>
+    <div class="menu-buttons">
+      <button id="monitor-btn" class="btn btn-primary btn-lg">Monitor</button>
+      <button id="control-btn" class="btn btn-primary btn-lg">Control</button>
+      <button id="schedule-btn" class="btn btn-primary btn-lg">Schedule</button>
+      <button id="tariff-btn" class="btn btn-primary btn-lg">Tariff Manager</button>
+    </div>
+  </div>
+  
+  <!-- Add any additional HTML content or styling as needed -->
+  
+  <script src="index.js"></script> <!-- Link your JavaScript file here (if any) -->
+</body>
+</html>
